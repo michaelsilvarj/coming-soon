@@ -1,0 +1,42 @@
+/* */
+body{
+    background-image: url(../img/bg-pattern-desktop.svg);
+    height: 100vh;
+
+}
+
+.container{
+
+}
+
+.start{
+    
+}
+.card{
+    background-color: #fff;
+    
+    border-radius: 4px;
+    
+}
+
+.logo{
+    margin-top:5px;
+    border-color:  solid 1px black;
+    /* background: blue; */
+}
+
+.img-temp{
+    /*background: pink;*/
+    border-color:  solid 1px black;
+   
+}
+.modelo{
+   height: 100vh;
+   width: 88vh;
+   
+    
+}
+
+.logo{
+    margin-top: 3%;
+}
