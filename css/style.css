@@ -1,28 +1,54 @@
 /* */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body{
-    background-image: url(../img/bg-pattern-desktop.svg);
+     
+    /*background-image: url(../img/bg-pattern-desktop.svg);*/
     height: 100vh;
+    width: 100vw;
+    font-family: 'Playfair Display', serif;
 
-}
-
-.container{
-
-}
-
-.start{
-    
-}
-.card{
-    background-color: #fff;
-    
-    border-radius: 4px;
-    
 }
 
 .logo{
+    margin-top: 3%;
+    
+}
+
+.figura-logo{
     margin-top:5px;
-    border-color:  solid 1px black;
-    /* background: blue; */
+    margin-left: 4em; 
+   
+    /*  border:  solid 1px black; background: blue; */
+}
+
+.primeiro-paragrafo{
+    
+   
+    color:#c79ea2 !important;  
+  
+}
+
+.subtitulo{
+    margin-top: 80px;
+    margin-left: 1em;
+    max-width: 380px;
+    font-size: 4em;
+    color: #352f2f;
+   
+    /*  border:  solid 1px black; margin-top: 0px; */
+}
+
+.terceiro-paragrafo{
+   
+    margin-left: 5.3em !important;
+    font-size: 12px !important;
+    text-align: justify !important;
+    max-width: 380px;
+    word-wrap:break-word;
+    color: #c79ea2; 
+   
+    
 }
 
 .img-temp{
@@ -34,9 +60,4 @@ body{
    height: 100vh;
    width: 88vh;
    
-    
-}
-
-.logo{
-    margin-top: 3%;
 }
