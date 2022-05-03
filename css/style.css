@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body{
      
-    /*background-image: url(../img/bg-pattern-desktop.svg);*/
+    background-image: url(../img/bg-pattern-desktop.svg);
     height: 100vh;
     width: 100vw;
     font-family: 'Playfair Display', serif;
@@ -60,7 +60,7 @@ body{
     margin-top: 2em;    
 }
 .invalido{
-    border: 1px solid red;
+    border: 1px solid #db5a5a;
     border-radius: 10px;
     display: flex;
     width:400px;
@@ -73,7 +73,15 @@ input{
     flex: 1;
     border-radius: 10px;
     outline: 0;
+    
 }
+.sucesso--validacao{
+    visibility: hidden;
+}
+.erro--validacao{
+    visibility: visible;     
+}
+
 button{
     background-color: #c79ea2;
     color: #FFF;
@@ -87,7 +95,11 @@ button:hover{
     box-shadow: 2px 2px 2px 1px #eccacb ;
 }
 
-
+.mensagem{
+    margin-left: 7em ;
+    font-size: 11px;
+    color:#e07680;
+}
 .img-temp{
     /*background: pink;*/
     border-color:  solid 1px black;
