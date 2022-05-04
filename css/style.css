@@ -1,80 +1,24 @@
-/* */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-body{
-     
-    background-image: url(../img/bg-pattern-desktop.svg);
-    height: 100vh;
+
+body{         
+    background-image: url(../img/bg-pattern-desktop.svg);    
     width: 100vw;
     font-family: 'Playfair Display', serif;
-    overflow: hidden
-
+    overflow: hidden;
 }
 
-.logo{
-    margin-top: 3%;
-    
-}
-
-.figura-logo{
-    margin-top:5px;
-    margin-left: 4em; 
-   
-    /*  border:  solid 1px black; background: blue; */
-}
-
-.primeiro-paragrafo{
-    
-   
-    color:#c79ea2 !important;  
-  
-}
-
-.subtitulo{
-    margin-top: 80px;
-    margin-left: 1em;
-    max-width: 380px;
-    font-size: 4em;
-    color: #352f2f;
-   
-    /*  border:  solid 1px black; margin-top: 0px; */
-}
-
-.terceiro-paragrafo{
-   
-    margin-left: 5.3em !important;
-    font-size: 12px !important;
-    text-align: justify !important;
-    max-width: 380px;
-    word-wrap:break-word;
-    color: #c79ea2; 
-   
-    
-}
-.valido{
-    border: 1px solid #f9d5d5;
-    border-radius: 10px;
-    display: flex;
-    width:400px;
-    margin-left: 4em;
-    margin-top: 2em;    
-}
-.invalido{
-    border: 1px solid #db5a5a;
-    border-radius: 10px;
-    display: flex;
-    width:400px;
-    margin-left: 4em;
-    margin-top: 2em;  
-}
+.primeiro-paragrafo,.terceiro-paragrafo{color:#c79ea2;}
+.subtitulo{color: #352f2f;}
 
 input{
     border: 0;
     flex: 1;
     border-radius: 10px;
     outline: 0;
-    background-color: inherit !important;
-    
+    background-color: inherit ;
+    padding-left: 2em;    
 }
 
 /* Remove a cor de fundo do auto complementar*/
@@ -85,42 +29,680 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-.sucesso--validacao{
-    visibility: hidden;
-}
-.erro--validacao{
-    visibility: visible; 
-    height: 20px;
-    margin-top: auto;
-    margin-bottom: auto;    
+
+
+/*Small devices (landscape phones)*/
+@media (max-width:576px) {
+
+    /* CARREGAMENTO FIGURA VERSÃO MOBILE */    
+        .modelo{
+            display: none;
+        }
+        .img-mobile {       
+        margin-top: 20px; 
+        width: 100%;
+        height: 40%;
+        display:inline;
+
+        }   
+        .figura-logo{
+            margin-top:20px;
+            margin-left: 2em;
+        }
+
+    /* FORMATAÇÃO CORPO DO TEXTO*/
+
+        .subtitulo{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .primeiro-paragrafo{        
+            font-size:20px;
+        }
+        .segundo-paragrafo{
+            font-size:30px;
+        }
+        .terceiro-paragrafo{      
+            font-size: 12px;
+            margin-top: 20px;
+            text-align: center; 
+            width:300px ;
+            margin-left: auto;
+            margin-right: auto; 
+            word-wrap: break-word;      
+        }
+        
+        /*ESTILIZAÇÃO DO FORMULÁRIO */
+
+        input{
+            border: 0;
+            flex: 1;
+            border-radius: 10px;
+            outline: 0;
+            background-color: inherit !important;
+            padding-left: 2em;   
+            font-size: 12px;         
+        }    
+
+        /* RESPONSAVEL PELA CLASSE DE VALIDAÇÕES */
+        .valido {
+            border: 1px solid #f9d5d5;
+            border-radius: 19px;
+            display: flex;
+            width:300px;       
+            margin-top: 1.5em; 
+            margin-left: auto;  
+            margin-right: auto; 
+        }
+
+        .invalido {
+            border: 1px solid #e06e6d;
+            border-radius: 19px;
+            display: flex;
+            width:300px;       
+            margin-top: 1em; 
+            margin-left: auto;  
+            margin-right: auto;  
+        }
+
+        /********* BOTÕES *****************/
+
+        .invalido button{
+            box-shadow: 2px 2px 2px  #eccacb;
+        } 
+
+        button {
+        background-color: #c79ea2; 
+        color: #FFF;
+        border: 0;
+        border-radius: 17px;
+        height: 25px;
+        width: 55px;
+        }
+
+        /****** ÍCONE E MENSAGEM DE VALIDAÇÃO *********/
+        .sucesso--validacao{
+            visibility: hidden;
+        }
+        
+        .erro--validacao{
+            visibility: visible; 
+            height: 20px;
+            margin-top: auto;
+            margin-bottom: auto;   
+            padding-right: 8px; 
+        }
+        
+        .mensagem{
+            margin-left: 7em ;
+            font-size: 11px;
+            color:#e07680;
+        } 
+        .mensagem-sent{
+            margin-left: 7em ;
+            font-size: 11px;
+            background-color:#77B92F;
+            color : aliceblue;
+            width:300px;
+
+        }
+
+    }
+ /***FIM DA QUERRY Small devices (landscape phones) ****/
+
+
+
+/*Medium devices (tablets, 768px e superior)*/
+  @media (min-width:768px) {
+
+        /* CARREGAMENTO FIGURA VERSÃO MOBILE */    
+    .modelo{
+        display: none;
+    }
+    .img-mobile {       
+       margin-top: 20px; 
+       width: 100%;
+       height: 40%;
+       display:inline;
+
+    }   
+    .figura-logo{
+        margin-top:20px;
+        margin-left: 2em;
+    }
+
+ /* FORMATAÇÃO CORPO DO TEXTO*/
+
+    .subtitulo{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .primeiro-paragrafo{        
+        font-size:70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .segundo-paragrafo{
+        font-size:90px;
+    }
+    .terceiro-paragrafo{      
+        font-size: 60px;
+        margin-top: 20px;
+        text-align: center; 
+        width:400px ;
+        margin-left: auto;
+        margin-right: auto; 
+        word-wrap: break-word;      
+     }
+     
+     /*ESTILIZAÇÃO DO FORMULÁRIO */
+
+     input{
+        border: 0;
+        flex: 1;
+        border-radius: 10px;
+        outline: 0;
+        background-color: inherit !important;
+        padding-left: 2em;   
+        font-size: 12px;         
+    }    
+
+    /* RESPONSAVEL PELA CLASSE DE VALIDAÇÕES */
+     .valido {
+        border: 1px solid #f9d5d5;
+        border-radius: 19px;
+        display: flex;
+        width:300px;       
+        margin-top: 1.5em; 
+        margin-left: auto;  
+        margin-right: auto; 
+    }
+
+    .invalido {
+        border: 1px solid #e06e6d;
+        border-radius: 19px;
+        display: flex;
+        width:300px;       
+        margin-top: 1em; 
+        margin-left: auto;  
+        margin-right: auto;  
+    }
+
+    /********* BOTÕES *****************/
+
+    .invalido button{
+        box-shadow: 2px 2px 2px  #eccacb;
+    } 
+
+    button {
+     background-color: #c79ea2; 
+     color: #FFF;
+     border: 0;
+     border-radius: 17px;
+     height: 25px;
+     width: 55px;
+    }
+
+    /****** ÍCONE E MENSAGEM DE VALIDAÇÃO *********/
+    .sucesso--validacao{
+        visibility: hidden;
+    }
+    
+    .erro--validacao{
+        visibility: visible; 
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: auto;   
+        padding-right: 8px; 
+    }
+    
+    .mensagem{
+        margin-left: 7em ;
+        font-size: 11px;
+        color:#e07680;
+    } 
+    .mensagem-sent{
+        margin-left: 7em ;
+        font-size: 11px;
+        background-color:#77B92F;
+        color : aliceblue;
+        width:300px;
+
+    }
+
+    }
+
+
+  
+
+  /*Large devices (desktops, 992px e superior)*/
+  @media(min-width:992px) and (max-width:1024px) {
+
+         
+    
+    .logo{
+        margin-top: 3%;
+        
+    }
+    
+    /* CARREGAMENTO FIGURA VERSÃO MOBILE */
+    .img-mobile{
+        display: none;
+    }
+    
+    .figura-logo{
+        margin-top:5px;
+        margin-left: 4em; 
+    }
+
+    .modelo{
+        display: inline;
+    }
+    
+    
+    
+    .subtitulo{
+        margin-top: 80px;
+        margin-left: 1em;
+        max-width: 380px;
+        font-size: 4em;
+        color: #352f2f;
+       
+        /*  border:  solid 1px black; margin-top: 0px; */
+    }
+    
+    .terceiro-paragrafo{
+       
+        margin-left: 5.3em !important;
+        font-size: 12px !important;
+        text-align: justify !important;
+        max-width: 380px;
+        word-wrap:break-word;
+        color: #c79ea2; 
+       
+        
+    }
+    
+    /* RESPONSAVEL PELA COR DO INPUT E VALIDAÇÕES */
+    .valido{
+        border: 1px solid #f9d5d5;
+        border-radius: 19px;
+        display: flex;
+        width:390px;
+        margin-left: 4em;
+        margin-top: 2em;    
+    }
+    .invalido{
+        border: 1px solid #e06e6d;
+        border-radius: 19px;
+        display: flex;
+        width:390px;
+        margin-left: 4em;
+        margin-top: 2em;  
+    }
+    
+    .invalido button{
+        box-shadow: 2px 2px 2px  #eccacb
+    }
+    .invalido button:hover{
+        background-color: #f9d5d5;
+        box-shadow: 4px 4px 4px 2px #eccacb ;
+       
+        
+    }
+    /**************************/
+    button{
+        background-color: #c79ea2; 
+        color: #FFF;
+        border: 0;
+        border-radius: 17px;
+        height: 35px;
+        width: 65px;
+    }
+    button:hover{
+        background-color: #f9d5d5;
+        box-shadow: 4px 4px 4px 2px #eccacb ;
+    
+    }
+    
+    
+    
+    /* Remove a cor de fundo do auto complementar*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    /**************************/
+    .sucesso--validacao{
+        visibility: hidden;
+    }
+    
+    .erro--validacao{
+        visibility: visible; 
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: auto;   
+        padding-right: 8px; 
+    }
+    
+    .mensagem{
+        margin-left: 7em ;
+        font-size: 11px;
+        color:#e07680;    
+        
+    }
+  
+    .mensagem-sent{
+        border: 1px solid #77B92F ;
+        background-color: #77B92F;
+        font-size: 12px;
+        text-align: center;  
+        color : aliceblue;
+        width: 320px;
+        height: 20px;
+        margin-top: 6px;
+        margin-left: 7em;
+        
+              
+       
+    }
+    .img-temp{
+        /*background: pink;*/
+        border-color:  solid 1px black;
+       
+    }
+    .modelo{
+       height: 100vh;
+       width: 41vw;
+       
+    }
+
+
+
 }
 
 
-button{
-    background-color: #c79ea2;
-    color: #FFF;
-    border: 0;
-    border-radius: 10px;
-    height: 35px;
-    width: 65px;
-}
-button:hover{
-    background-color: #f9d5d5;
-    box-shadow: 2px 2px 2px 1px #eccacb ;
-}
 
-.mensagem{
-    margin-left: 7em ;
-    font-size: 11px;
-    color:#e07680;
-}
-.img-temp{
-    /*background: pink;*/
-    border-color:  solid 1px black;
+
+
+
+
+
+  
+
+  /*Extra large devices (large desktops, 1200px e superior)*/
+  @media (min-width:1200px)  {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:600px){
+
+
    
+    
+    
+    .logo{
+        margin-top: 3%;
+        
+    }
+    
+    /* CARREGAMENTO FIGURA VERSÃO MOBILE */
+    .img-mobile{
+        display: none;
+    }
+    
+    .figura-logo{
+        margin-top:5px;
+        margin-left: 4em; 
+       
+        /*  border:  solid 1px black; background: blue; */
+    }
+    
+    
+    
+    .subtitulo{
+        margin-top: 80px;
+        margin-left: 1em;
+        max-width: 380px;
+        font-size: 4em;
+        color: #352f2f;
+       
+        /*  border:  solid 1px black; margin-top: 0px; */
+    }
+    
+    .terceiro-paragrafo{
+       
+        margin-left: 5.3em !important;
+        font-size: 12px !important;
+        text-align: justify !important;
+        max-width: 380px;
+        word-wrap:break-word;
+        color: #c79ea2; 
+       
+        
+    }
+    
+    /* RESPONSAVEL PELA COR DO INPUT E VALIDAÇÕES */
+    .valido{
+        border: 1px solid #f9d5d5;
+        border-radius: 19px;
+        display: flex;
+        width:390px;
+        margin-left: 4em;
+        margin-top: 2em;    
+    }
+    .invalido{
+        border: 1px solid #e06e6d;
+        border-radius: 19px;
+        display: flex;
+        width:390px;
+        margin-left: 4em;
+        margin-top: 2em;  
+    }
+    
+    .invalido button{
+        box-shadow: 2px 2px 2px  #eccacb
+    }
+    .invalido button:hover{
+        background-color: #f9d5d5;
+        box-shadow: 4px 4px 4px 2px #eccacb ;
+       
+        
+    }
+    /**************************/
+    button{
+        background-color: #c79ea2; 
+        color: #FFF;
+        border: 0;
+        border-radius: 17px;
+        height: 35px;
+        width: 65px;
+    }
+    button:hover{
+        background-color: #f9d5d5;
+        box-shadow: 4px 4px 4px 2px #eccacb ;
+    
+    }
+    
+    
+    
+    /* Remove a cor de fundo do auto complementar*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    /**************************/
+    .sucesso--validacao{
+        visibility: hidden;
+    }
+    
+    .erro--validacao{
+        visibility: visible; 
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: auto;   
+        padding-right: 8px; 
+    }
+    
+    .mensagem{
+        margin-left: 7em ;
+        font-size: 11px;
+        color:#e07680;    
+        
+    }
+  
+    .mensagem-sent{
+        border: 1px solid #77B92F ;
+        background-color: #77B92F;
+        font-size: 12px;
+        text-align: center;  
+        color : aliceblue;
+        width: 320px;
+        height: 20px;
+        margin-top: 6px;
+        margin-left: 7em;
+        
+              
+       
+    }
+    .img-temp{
+        /*background: pink;*/
+        border-color:  solid 1px black;
+       
+    }
+    .modelo{
+       height: 100vh;
+       width: 41vw;
+       
+    }
+
+
+
 }
-.modelo{
-   height: 100vh;
-   width: 41vw;
-   
-}
+
+
+/* */
+
+/*********** DISPOSITIVOS DESKTOPS E TABLETS ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+/**************************/

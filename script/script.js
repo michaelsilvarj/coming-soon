@@ -4,6 +4,7 @@ let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[
 
 let send = document.getElementById("ok");
 let erro = document.getElementById("erro");
+let msn = document.querySelector('.mensagem');
 let enviar = true;
 
 
@@ -20,7 +21,16 @@ function validador(){
         send.classList.add('valido'); 
         erro.classList.remove('erro--validacao'); 
         erro.classList.add('sucesso--validacao');
-        document.querySelector('.mensagem').innerHTML = ''; 
+        document.querySelector('.mensagem').innerHTML = '';
+        msn.classList.remove('mensagem');
+        msn.classList.add('mensagem-sent');       
+        document.querySelector('.mensagem-sent').innerHTML = 'Sent';
+        
+        setTimeout(()=>{
+            document.querySelector('.mensagem-sent').innerHTML = '';
+            msn.classList.remove('mensagem-sent');
+            msn.classList.add('mensagem');
+        },4000);
           
     }
 }

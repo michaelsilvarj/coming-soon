@@ -12,37 +12,42 @@
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 <body>
     <!--Inicio Div-->
    <div class="container-fluid">
        <!--Inicio linha-->
        <div class="row">
-            <!--Logo-->
-            <div class="col-7 logo order-1" >
+            <div class="col-md-12 col-sm-12 col-xl-7 logo order-1" >
+                <!--Logo-->
                 <img class="figura-logo" src="./img/logo.svg" alt="">
+                <div class="col">
+                    <img class="img-mobile" src="./img/hero-mobile.jpg" alt="">  
+                </div>        
                 <div class="row ">
                     <div class="col texto">
                         
-                        <h1 class="order-10 subtitulo"> <span class="primeiro-paragrafo">WE' RE
-                            </span><br>COMING SOON
+                        <h1 class="subtitulo"> 
+                            <span class="primeiro-paragrafo" >WE' RE</span>  
+                            <span class="segundo-paragrafo"><br>COMING <br>SOON</span>
                         </h1>
-                        <h1 class="terceiro-paragrafo order-12">
-                            Hello fellow shoppers ! We're currently bulding ouur new fashion store. Add your
-                            e-mail below to stay up-to-date  whith anouncements and our lanch deals.
+                        <h1 class="terceiro-paragrafo ">
+                            Hello fellow shoppers! We're currently bulding ouur new fashion store. Add your
+                            e-mail below to stay up-to-date whith anouncements and our lanch deals.
                         </h1>
 
                         <div class="valido" id="ok">
-                            <input id="validar" type="email" name="email" placeholder="E-mail.." data-rules="required|email">
+                            <input id="validar" type="email" name="email" placeholder=" E-mail.." data-rules="required|email">
                             <img class="sucesso--validacao" id="erro" alt="" src="./img/icon-error.svg">
                             <button class="btn-enviar">></button>
                         </div>
-                        <span class="mensagem"></span>
-                        
+                        <div class="mensagem" id="sent"></div>
+                                      
                     </div>
                 </div>
             </div>
-            <div class="col-5 img-temp order-2" >
+            <div class="col-5  img-temp order-2" >
                     <img class="modelo" src="./img/hero-desktop.jpg" alt="">
             </div>
             
@@ -67,3 +72,4 @@
     <script src="./script/script.js"></script>
 </body>
 </html>
+
